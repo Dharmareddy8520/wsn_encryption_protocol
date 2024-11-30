@@ -58,7 +58,7 @@ def visualize_metrics_separately(results):
 
     # Packet Size
     plt.figure(figsize=(10, 6))
-    sns.barplot(x="Protocol", y="Value", data=df[df["Metric"] == "Packet Size"], hue="Protocol", dodge=False, palette="Reds_d", legend=False)
+    sns.barplot(x="Protocols", y="Value", data=df[df["Metric"] == "Packet Size"], hue="Protocol", dodge=False, palette="Reds_d", legend=False)
     plt.title("Packet Size by Protocol")
     plt.ylabel("Size (bytes)")
     plt.xlabel("Protocol")
